@@ -1,16 +1,21 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class questionsPage {
 
     public void create(JFrame frame) {
+        Font font = new Font(Font.SANS_SERIF, Font.BOLD, 22);
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
 
         // Question 1
+        question1.setFont(font);
+        question1.setBounds(10, 10, 300, 20);
+        JRadioButton radio1_1 = new JRadioButton("۱");
         JLabel question1 = new JLabel("how interesting is the user interface of the app?");
         question1.setBounds(10, 10, 300, 20);
 
@@ -33,6 +38,7 @@ public class questionsPage {
         group1.add(radio1_5);
 
         // Question 2
+        question2.setFont(font);
         JLabel question2 = new JLabel("is it easy for you to access various features of the app?");
         question2.setBounds(10, 90, 300, 20);
 
@@ -56,6 +62,7 @@ public class questionsPage {
         group2.add(radio2_5);
 
         // Question 3
+        question3.setFont(font);
         JLabel question3 = new JLabel("how simple and user friendly is the design of the app?");
         question3.setBounds(10, 170, 300, 20);
 
@@ -78,6 +85,7 @@ public class questionsPage {
         group3.add(radio3_5);
 
         // Question 4
+        question4.setFont(font);
         JLabel question4 = new JLabel("are the colors and fonts that are used appropriate?");
         question4.setBounds(10, 250, 350, 20);
 
@@ -100,6 +108,7 @@ public class questionsPage {
         group4.add(radio4_5);
 
         // Next button to go to Page3
+        nextButton.setFont(font);
         JButton nextButton = new JButton("next page");
         nextButton.setBounds(10, 320, 100, 20);
         nextButton.addActionListener(e -> {

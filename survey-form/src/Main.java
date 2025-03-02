@@ -1,10 +1,15 @@
 import javax.swing.*;
 import packages.informationPage;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
+        Font font = new Font(Font.SANS_SERIF, Font.BOLD, 22);
+
         // Create and configure the main frame
+        frame.setFont(font);
         JFrame frame = new JFrame("survey");
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
@@ -17,6 +22,11 @@ public class Main {
         panel.setBounds(0, 0, 600, 600);
 
         // Create title label
+        title.setFont(font);
+        title.setBounds(10, 10, 100, 20);
+
+        // Create start button
+        startButton.setFont(font);
         JLabel title = new JLabel("survey");
         title.setBounds(10, 10, 100, 20);
 

@@ -6,11 +6,11 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        Font font = new Font(Font.SANS_SERIF, Font.BOLD, 22);
+        Font font = new Font(Font.SANS_SERIF, Font.BOLD, 14);
 
         // Create and configure the main frame
-        frame.setFont(font);
         JFrame frame = new JFrame("survey");
+        frame.setFont(font);
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,16 +22,13 @@ public class Main {
         panel.setBounds(0, 0, 600, 600);
 
         // Create title label
+        JLabel title = new JLabel("survey");
         title.setFont(font);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
-        startButton.setFont(font);
-        JLabel title = new JLabel("survey");
-        title.setBounds(10, 10, 100, 20);
-
-        // Create start button
         JButton startButton = new JButton("start!");
+        startButton.setFont(font);
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
